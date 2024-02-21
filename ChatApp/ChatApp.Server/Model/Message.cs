@@ -1,9 +1,9 @@
 ﻿namespace ChatApp.Server.Model
 {
-    public class Message
+    public class ChatMessage
     {
         public int Id { get; set; }
-        public string Content { get; set; }
-        public DateTime SendTime { get; set; }
+        public string Message { get; set; }
+        public string User { get; set; }
     }
 }
