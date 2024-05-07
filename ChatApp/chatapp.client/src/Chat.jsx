@@ -22,6 +22,7 @@ const Chat = () => {
 
                 connection.on('ReceiveMessage', message => {
                     const updatedChat = [...latestChat.current];
+                    console.log(message)
                     updatedChat.push(message);
 
                     setChat(updatedChat);

@@ -12,6 +12,7 @@ const ChatInput = (props) => {
 
         if (isUserProvided && isMessageProvided) {
             props.sendMessage(user, message);
+            setMessage('');
         }
         else {
             alert('Please insert an user and a message.');
